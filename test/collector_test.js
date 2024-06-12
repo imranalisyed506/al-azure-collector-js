@@ -172,7 +172,7 @@ describe('Collector tests', function() {
     });
     
     it('Verify processLog with custom hostmeta with filterJson', function(done) {
-        let expectedLogMsgsBody = 'eJzj8uDiKM4vLUpO9UwRsuFiy8gvLgGyRO6aencv0Z+ZHfvC5WVArVPYA/XKcxIMSlJcElycIDXxJZUFqULcUpyJVaVFqfFppXkAkv4Y7Q==';
+        let expectedLogMsgsBody = 'eJzj8uDiKM4vLUpO9UwRsuFiy8gvLvFMERK5a+rdvUR/ZnbsC5eXAbVOYQ/UK89JMChJcUlwcYLUxJdUFqQKcUtxJlaVFqXGp5XmAQCS/hjt';
         let expectedLMSStatsBody = '[{"inst_type":"collector","appliance_id":"","source_type":"ehub","source_id":"sourceId","host_id":"hostId","event_count":0,"byte_count":0,"application_id":"","timestamp":0}]';
         fakePost = sinon.stub(alcollector.AlServiceC.prototype, 'post').callsFake(
             function fakeFn(path, extraOptions) {
@@ -227,7 +227,7 @@ describe('Collector tests', function() {
     });
 
     it('Verify processLog with custom hostmeta with filterRegex', function(done) {
-        let expectedLogMsgsBody = 'eJzj8uDiKM4vLUpO9UwRsuFiy8gvLgGyRO6aencv0Z+ZHfvC5WVArVPYA/XKcxIMSlJcElycIDXxJZUFqULcUpyJVaVFqfFppXkAkv4Y7Q==';
+        let expectedLogMsgsBody = 'eJzj8uDiKM4vLUpO9UwRsuFiy8gvLvFMERK5a+rdvUR/ZnbsC5eXAbVOYQ/UK89JMChJcUlwcYLUxJdUFqQKcUtxJlaVFqXGp5XmAQCS/hjt';
         let expectedLMSStatsBody = '[{"inst_type":"collector","appliance_id":"","source_type":"ehub","source_id":"sourceId","host_id":"hostId","event_count":0,"byte_count":0,"application_id":"","timestamp":0}]';
         fakePost = sinon.stub(alcollector.AlServiceC.prototype, 'post').callsFake(
             function fakeFn(path, extraOptions) {
